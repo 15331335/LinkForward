@@ -9,6 +9,8 @@ A Chrome extension.
 
 而 LinkForward 实现了「只需要使用鼠标左键按住链接往上拖动一小段距离后释放」即可。
 
+![alt](./images/LinkForward.gif)
+
 ## 使用
 下载压缩文件并解压，使用 Chrome 拓展程序中的「加载已解压的拓展程序」载入插件文件夹。
 
@@ -17,3 +19,4 @@ A Chrome extension.
 - baidu
 - google
 - bing
+
