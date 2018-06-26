@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "Link Forward",
+    "version": "1.0",
+    "description": "A Chrome extension",
+
+    "icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+
+    "browser_action": {
+        "default_title": "Link Forward",
+        "default_popup": "html/index.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "32": "images/icon32.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
+    },
+
+    "content_scripts": [{
+        "matches": [
+            "https://www.google.com/*",
+            "https://www.google.com.hk/*",
+            "https://www.baidu.com/*",
+            "https://cn.bing.com/*"
+        ],
+        "js": ["js/jquary.js", "js/index.js"],
+        "css": ["css/index.css"],
+        "run_at": "document_start"
+    }],
+
+    "permissions": ["tabs", "storage"],
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": false
+    },
+    "homepage_url": "https://www.baidu.com"
+}
