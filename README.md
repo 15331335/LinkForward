@@ -1,0 +1,2 @@
+# LinkForward
+A Chrome extension.
