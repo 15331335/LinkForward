@@ -39,5 +39,5 @@
         "scripts": ["js/background.js"],
         "persistent": false
     },
-    "homepage_url": "https://www.baidu.com"
+    "homepage_url": "https://github.com/15331335/LinkForward"
 }
